@@ -2096,7 +2096,7 @@ void AMSyslogRelayCallBack (
 - (BOOL)reboot
 {
     NSDictionary *message = @{
-                              @"Request": @"Reboot"
+                              @"Request": @"Restart" //@"Reboot"
                               };
     
     NSDictionary *reply = [self sendRequestAndWaitForSingleReply:message];
